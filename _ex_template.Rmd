@@ -1,0 +1,20 @@
+
+> **_Math Prerequisite:_**
+
+```{r}
+library(tidyverse)
+library(fishualize)
+```
+
+## The biology
+
+$$
+\\[10pt]
+example = \text{with explanation}
+\\[10pt]
+$$
+
+## The challenge
+## The solution
+## Checking our work
+## Reflecting on the biology

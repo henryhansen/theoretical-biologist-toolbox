@@ -632,4 +632,3 @@ $$
 
 This was a beast of an exercise. There were so many steps, lots of ways to make mistakes, and a ridiculous amount of simplifying to keep track of everything.  And even if you didn't make it to the end, take a moment to be proud of your attempt. Science is one of those disciplines that is both a blessing and a curse in that the only answers you get are the ones you find yourself. Being thorough is just one piece of the scientific enterprise that I definitely felt was highlighted with this exercise. Much more would be needed to develop a publication so it's good practice to get acquainted with persistence now.
 
-### Reflecting on the biology

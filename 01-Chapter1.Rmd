@@ -1,0 +1,122 @@
+# Chapter 1 Exercises
+
+## Exercise 1 & 2  
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+    cancel: ["Extension","cancel"],
+    bcancel: ["Extension","cancel"],
+    xcancel: ["Extension","cancel"],
+    cancelto: ["Extension","cancel"]
+  });
+});
+</script>
+
+
+> **_Math Prerequisite:_** Algebra and Inequality Functions
+
+```{r, echo=T, results='hide'}
+library(tidyverse)
+```
+
+### The biology
+
+The concept and the impact of the choices one makes, often gets taken for granted. In the ecological and evolutionary arena, choices govern many of the phenomenon we observe. An organism must use its resources in an effective manner to survive and reproduce. The collection of choices that an organism makes could be considered a strategy and when that strategy is passed on to future generations, we can start to see how generalist and specialist behaviors arise.
+
+In the simplest arrangement, we could consider a single predator, say a wolf, that has two choices of prey, $i$, where each type of prey has a distinct energy benefit, $E$,for the predator . This energy benefit will depend on how long it takes to handle and consume the prey, $h$. For example, the energy benefit of a wolf trying to catch a rabbit versus trying to catch a beaver. And will also depend on often the predator will encounter each prey type, $\lambda$. Given these assumptions we could argue that the best prey items are the ones that give us the most amount of energy with the least amount of effort!
+
+With this in mind let's start by writing some of these down with labels.
+
+$$
+i \text{ indicates an index for prey (1 = 1st prey, 2 = 2nd prey)}
+\\[10pt]
+E_i = \text{net energy gain}
+\\[10pt]
+h_i = \text{handling and consumption time}
+\\[10pt]
+\lambda_i = \text{encounter rate of prey}
+\\[10pt]
+\frac{E_i}{h_i} = \text{prey value}
+$$
+
+In Marc's book we assume that prey type 1 is more profitable than prey type 2. That means for now on we replace $i$ with 1. So if you were the predator and had to choose among prey items, would you only go after prey 1 or would you go after anything you encountered? The first way is the way of the specialist, while the second is the way of the generalist. The really exciting part is that we can figure out which strategy is more effective, at least from the energy perspective. But we still need a couple more pieces to figure this out.
+
+First, the effectiveness of a strategy is dependent on how long we watch either approach so we should assume a long time period to better match what we might see in the wild. Now that we have this long time period $T$, we have to break this into two categories, time spent searching, $S$, and time spent handling prey after finding it, $H$. Let's put this relationship down.
+
+$$
+T = S + H = \text{ total time period is the combination of searching and handling time }
+$$
+
+Now take note that $h$ and $H$ are not the same.$H$ is just a placeholder, what we really want to do is to plug in our parameters from above. If $S$ is search time with no prey, $H$ must be the time spent handling any prey that we encountered after searching for it. We can just combine these by multiplying!
+
+$$
+H = h_1(\lambda S) = \text{total prey handling time after search and encounter}
+$$
+
+With these major pieces figured out we can put $S$ and $H$ back into our total time equation. This is super important because we can now rearrange this master equation to figure out the tradeoffs between our different strategies. Let me show you.
+
+$$
+T = S + H = S + h_1(\lambda S) \text{ master time equation with search and handling}
+\\[10pt]
+T = S(1 + h_1\lambda) \text{ master time equation simplified}
+\\[10pt]
+S = \frac{T}{h_1\lambda} \text{master search equation}
+$$
+
+All we need to do now is bring in the final piece of our puzzle, $E$! Remember, $E$ is net energy for a prey type so the total net energy is going to be, $E$, for every prey we encountered, $\lambda$, for the entire search time $S$. The rate at which this total net energy is acquired for a predator is just total net energy divided by time. In other words energy from consumed prey per unit of time.
+
+$$
+R_s = \frac{E_1\lambda_1S}{S(1+h_1\lambda)} = \text{energy rate for predator}
+\\[10pt]
+R_s = \frac{E_1\lambda_1}{1+h_1\lambda} = \text{energy rate for predator simplified (S cancels out)}
+$$
+
+Fantastic, we now have an equation for the specialist strategy that tells us exactly how much energy a predator gets for a time period when hunting prey type 1!
+
+### The challenge
+
+So here comes the challenge! Now that we know what the specialist strategy looks like how can we figure out the generalist approach? And how do we compare the two? So for the first part we need to include prey type 2. And for comparing the models we need to show how the encounter rate for prey type 1 could govern strategy choice. In other words show that the specialist strategy yields a greater energy rate than the generalist strategy by solving for $\lambda1$. Thankfully, Marc has given us what the final outcomes should look like for both problems.
+
+$$
+R_g = \frac{E_1\lambda_1+E_2\lambda_2}{1+h_1\lambda_1+h_2\lambda_2} = \text{Generalist strategy}
+\\[10pt]
+\lambda_1 > \frac{E_2}{E_1h_2-E_2h_1} = \text{Specialist strategy advantage}
+$$
+
+<center>
+**Produce an equation for the generalist strategy and show how the specialist strategy could be more effective because of encounter rate of prey type 1**
+</center>
+
+
+### The solution
+
+#### Part 1 (Exercise 1.1)
+So for the generalist strategy we just need to include prey type 2, therefore we can recycle many of the same terms and solve for the equation using a similar approach. Remember we want total energy gained for each species divided by total time.
+$$
+\textsf{Create master time equation with both prey handling times}
+\\[10pt]
+T = S + H_1 + H_2
+\\[10pt]
+\textsf{Substitute the placeholder H with our equation for total prey handling time after search and encounter}
+\\[10pt]
+T = S + h_1(\lambda_1 S) + h_2(\lambda_2 S)
+\\[10pt]
+\textsf{Simplify equation by factoring out S}
+\\[10pt]
+T = S( 1 + h_1\lambda_1 + h_2\lambda_2)
+\\[10pt]
+\textsf{Solve for S}
+\\[10pt]
+S = \frac{T}{( 1 + h_1\lambda_1 + h_2\lambda_2)}
+\\[10pt]
+\textsf{Bring in total net energy for each prey using S and divide by total time}
+\\[10pt]
+R_g = \frac{E_1\lambda_1S + E_2\lambda_2S}{S( 1 + h_1\lambda_1 + h_2\lambda_2)}
+\\[10pt]
+\textsf{factor out S and cancel}
+\\[10pt]
+R_g = \frac{\cancel{S}(E_1\lambda_1 + E_2\lambda_2)}{\cancel{S}( 1 + h_1\lambda_1 + h_2\lambda_2)}
+\\[10pt]
+R_g = \frac{(E_1\lambda_1 + E_2\lambda_2)}{( 1 + h_1\lambda_1 + h_2\lambda_2)}
+$$

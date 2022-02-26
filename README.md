@@ -1,13 +1,13 @@
-Welcome! 
+Welcome!
 
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). 
+This is an unofficial online book of solutions for Marc Mangel's The Theoretical 
+Biologist's Toolbox using R Markdown and **bookdown** (<https://github.com/rstudio/bookdown>).
 
-This template provides a skeleton file structure that you can edit to create your book. 
+The **Theoretical Biologist's Toolbox** book: <https://www.cambridge.org/core/books/theoretical-biologists-toolbox/EE6545A630ECC2842057398651C85C5F>
 
-The contents inside the .Rmd files provide some pointers to help you get started, but feel free to also delete the content in each file and start fresh.
+In this book you can find our solutions to the exercises written in LaTeX and any
+associated graphs and analyses written in R. 
 
-Additional resources:
+Feel free to reach out if you have any questions or notice any errors!
 
-The **bookdown** book: https://bookdown.org/yihui/bookdown/
 
-The **bookdown** package reference site: https://pkgs.rstudio.com/bookdown

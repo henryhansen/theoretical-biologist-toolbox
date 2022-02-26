@@ -11,7 +11,8 @@ description: |
   This is an online book of solutions for Marc Mangel's The Theoretical
   Biologist's Toolbox.
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo:  henryhansen/theoretical-biologist-toolbox
+
 ---
 
 # Exercises

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Exercises | Solutions for The Theoretical Biologist’s Toolbox</title>
+  <meta name="description" content="<p>This is an online book of solutions for Marc Mangel’s The Theoretical
+Biologist’s Toolbox.</p>" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Exercises | Solutions for The Theoretical Biologist’s Toolbox" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is an online book of solutions for Marc Mangel’s The Theoretical
+Biologist’s Toolbox.</p>" />
+  <meta name="github-repo" content="henryhansen/theoretical-biologist-toolbox" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Exercises | Solutions for The Theoretical Biologist’s Toolbox" />
+  
+  <meta name="twitter:description" content="<p>This is an online book of solutions for Marc Mangel’s The Theoretical
+Biologist’s Toolbox.</p>" />
+  
+
+<meta name="author" content="Henry H. Hansen &amp; Daniel Greenberg" />
+
+
+<meta name="date" content="2022-04-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Solutions for The Theoretical Biologist's Toolbox</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like <span>https://bookdown.org/yihui/bookdown</span><span></span></a>
+<ul>
+<li><a href="index.html#exercise-1-2">Exercise 1 &amp; 2<span></span></a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="index.html"><a href="index.html#the-biology"><i class="fa fa-check"></i><b>1.0.1</b> The biology<span></span></a></li>
+<li class="chapter" data-level="1.0.2" data-path="index.html"><a href="index.html#the-challenge"><i class="fa fa-check"></i><b>1.0.2</b> The challenge<span></span></a></li>
+<li class="chapter" data-level="1.0.3" data-path="index.html"><a href="index.html#the-solution"><i class="fa fa-check"></i><b>1.0.3</b> The solution<span></span></a></li>
+</ul></li>
+<li><a href="index.html#exercise-3">Exercise 3<span></span></a>
+<ul>
+<li class="chapter" data-level="1.0.4" data-path="index.html"><a href="index.html#the-biology-1"><i class="fa fa-check"></i><b>1.0.4</b> The biology<span></span></a></li>
+<li class="chapter" data-level="1.0.5" data-path="index.html"><a href="index.html#the-challenge-1"><i class="fa fa-check"></i><b>1.0.5</b> The challenge<span></span></a></li>
+<li class="chapter" data-level="1.0.6" data-path="index.html"><a href="index.html#the-solution-1"><i class="fa fa-check"></i><b>1.0.6</b> The solution<span></span></a></li>
+<li class="chapter" data-level="1.0.7" data-path="index.html"><a href="index.html#checking-our-work"><i class="fa fa-check"></i><b>1.0.7</b> Checking our work<span></span></a></li>
+<li class="chapter" data-level="1.0.8" data-path="index.html"><a href="index.html#reflecting-on-the-biology"><i class="fa fa-check"></i><b>1.0.8</b> Reflecting on the biology<span></span></a></li>
+</ul></li>
+<li><a href="index.html#exercise-4">Exercise 4<span></span></a>
+<ul>
+<li class="chapter" data-level="1.0.9" data-path="index.html"><a href="index.html#the-biology-2"><i class="fa fa-check"></i><b>1.0.9</b> The biology<span></span></a></li>
+<li class="chapter" data-level="1.0.10" data-path="index.html"><a href="index.html#the-challenge-2"><i class="fa fa-check"></i><b>1.0.10</b> The challenge<span></span></a></li>
+<li class="chapter" data-level="1.0.11" data-path="index.html"><a href="index.html#the-solution-2"><i class="fa fa-check"></i><b>1.0.11</b> The solution<span></span></a></li>
+<li class="chapter" data-level="1.0.12" data-path="index.html"><a href="index.html#checking-our-work-1"><i class="fa fa-check"></i><b>1.0.12</b> Checking our work<span></span></a></li>
+<li class="chapter" data-level="1.0.13" data-path="index.html"><a href="index.html#reflecting-on-the-biology-1"><i class="fa fa-check"></i><b>1.0.13</b> Reflecting on the biology<span></span></a></li>
+</ul></li>
+<li><a href="index.html#exercise-5">Exercise 5<span></span></a>
+<ul>
+<li class="chapter" data-level="1.0.14" data-path="index.html"><a href="index.html#the-biology-3"><i class="fa fa-check"></i><b>1.0.14</b> The biology<span></span></a></li>
+<li class="chapter" data-level="1.0.15" data-path="index.html"><a href="index.html#the-challenge-3"><i class="fa fa-check"></i><b>1.0.15</b> The challenge<span></span></a></li>
+<li class="chapter" data-level="1.0.16" data-path="index.html"><a href="index.html#the-solution-3"><i class="fa fa-check"></i><b>1.0.16</b> The solution<span></span></a></li>
+<li class="chapter" data-level="1.0.17" data-path="index.html"><a href="index.html#checking-our-work-2"><i class="fa fa-check"></i><b>1.0.17</b> Checking our work<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="exercises.html"><a href="exercises.html"><i class="fa fa-check"></i><b>2</b> Exercises<span></span></a>
+<ul>
+<li><a href="exercises.html#exercise-1">Exercise 1<span></span></a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="exercises.html"><a href="exercises.html#the-biology-4"><i class="fa fa-check"></i><b>2.0.1</b> The biology<span></span></a></li>
+<li class="chapter" data-level="2.0.2" data-path="exercises.html"><a href="exercises.html#the-challenge-4"><i class="fa fa-check"></i><b>2.0.2</b> The challenge<span></span></a></li>
+<li class="chapter" data-level="2.0.3" data-path="exercises.html"><a href="exercises.html#the-solution-4"><i class="fa fa-check"></i><b>2.0.3</b> The solution<span></span></a></li>
+<li class="chapter" data-level="2.0.4" data-path="exercises.html"><a href="exercises.html#checking-our-work-3"><i class="fa fa-check"></i><b>2.0.4</b> Checking our work<span></span></a></li>
+<li class="chapter" data-level="2.0.5" data-path="exercises.html"><a href="exercises.html#reflecting-on-the-biology-2"><i class="fa fa-check"></i><b>2.0.5</b> Reflecting on the biology<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Solutions for The Theoretical Biologist’s Toolbox</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="exercises" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Exercises<a href="exercises.html#exercises" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="exercise-1" class="section level2 unnumbered hasAnchor">
+<h2>Exercise 1<a href="exercises.html#exercise-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+    cancel: ["Extension","cancel"],
+    bcancel: ["Extension","cancel"],
+    xcancel: ["Extension","cancel"],
+    cancelto: ["Extension","cancel"]
+  });
+});
+</script>
+<blockquote>
+<p><strong><em>Math Prerequisite:</em></strong> Integration</p>
+</blockquote>
+<div id="the-biology-4" class="section level3 hasAnchor" number="2.0.1">
+<h3><span class="header-section-number">2.0.1</span> The biology<a href="exercises.html#the-biology-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Here we work with a very important concept, individual growth. If one understands how an organism grows, one can begin to see how growth informs everything from population biomass to maturity. The equation we are working with is a famous one, the one presented by Ludwig von Bertalanffy. While the growth equation has stood the test of time and bears his name, it’s important to point out that Ludwig was a literal nazi-party member.</p>
+<p>That being said, we start off by simply expressing that the weight of an individual at a given age <span class="math inline">\(W(t)\)</span> is related to its length at the same age <span class="math inline">\(L(t)\)</span> to the third power multiplied by the density <span class="math inline">\(\rho\)</span> of the organism resulting in <span class="math inline">\(W(t) = \rho L(t)^3\)</span>. Most organisms but not all follow this 3-dimensional simplified view so the third power makes intuitive sense. We now step into the logic of the growth equation. If we assume that an organism’s change in weight over time is dependent on anabolic (using energy and mass to build, muscle building) and catabolic (breaking down mass to produce energy, digestion) processes we show that simply as the following.</p>
+<p><span class="math display">\[
+\\[10pt]
+\frac{dW}{dt} = \text{anabolic - catabolic}
+\\[10pt]
+\]</span>
+We take things a step further and translate the anabolic and catabolic to quantifiable terms that link to an organism’s metabolism. Here Marc explains the justification for surface area for the anabolic term and volume for the catabolic term. It’s important to realize that these are assumptions and can be changed accordingly.</p>
+<p><span class="math display">\[
+\\[10pt]
+\frac{dW}{dt} = \sigma L^2 -cL^3
+\\[10pt]
+\]</span>
+The next step is to incorporate our previous assumption of the 3-dimensional organism. Since we know that change in weight over time is related to the volume of the organism, one of the “L”’s has to be dependent on time also, we get <span class="math inline">\(\frac{dW}{dt} = 3\rho L(t)^2 \frac{dL}{dt}\)</span> by taking the derivative. Now its just substitution to include this new length view of growth into our metabolic view of growth. And lastly, Marc then rearranges the equation to show the second form of the von Bertalanffy growth equation which for all practical matters is much easier to interpret.</p>
+<p><span class="math display">\[
+\\[10pt]
+\frac{dW}{dt} = 3\rho L^2 \frac{dL}{dt} = \sigma L^2 -cL^3
+\\[10pt]
+\text{after simplifying we get}
+\\[10pt]
+\frac{dL}{dt} = \frac{\sigma}{3\rho}-\frac{c}{3\rho}L
+\\[10pt]
+\text{after rearranging we get}
+\\[10pt]
+\frac{dL}{dt} = \frac{c}{3\rho} \left(\frac{\sigma}{c}-L\right) = k(L_{\infty}-L)
+\]</span></p>
+<p>The rearranged equation tells us that change in length given an age corresponds to some <span class="math inline">\(k\)</span> growth component multiplied by the difference between the largest that organism can be with its actual length!</p>
+</div>
+<div id="the-challenge-4" class="section level3 hasAnchor" number="2.0.2">
+<h3><span class="header-section-number">2.0.2</span> The challenge<a href="exercises.html#the-challenge-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<center>
+<strong>Check that the units of q, k, and asymptotic size are correct and find a unique solution for the ordinary differential equation given</strong> <span class="math inline">\(L(0)=L_0\)</span>
+</center>
+</div>
+<div id="the-solution-4" class="section level3 hasAnchor" number="2.0.3">
+<h3><span class="header-section-number">2.0.3</span> The solution<a href="exercises.html#the-solution-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Here Marc suggested an alternative way to group the parameters and we need to check the units so they make sense.
+<span class="math display">\[
+\\[10pt]
+q = \frac{\sigma}{3\rho}
+\\[10pt]
+k = \frac{c}{3\rho}
+\\[10pt]
+\frac{dL}{dt} = q-kL
+\]</span>
+If the derivative is some unit length over time then we can assume something like centimeters per day. That would require the other two terms to have the same units. <span class="math inline">\(q\)</span> is by itself so centimeters per day is fine but <span class="math inline">\(k\)</span> is a little trickier. We know <span class="math inline">\(L\)</span> is centimeters but we can’t have two lengths multiplied together otherwise we would get centimeters squared. That would suggest that <span class="math inline">\(k\)</span> is just some unitless number per day.</p>
+<p><em>checking our work </em>: Recall that <span class="math inline">\(\rho\)</span> was a density so that means it has to have units of weight divided by volume such as <span class="math inline">\(\frac{kg}{cm^3}\)</span>. With simple substitution cancelling we can see that the units for <span class="math inline">\(q = \frac{\sigma}{\rho} = \frac{cm}{day}\)</span>. And similarly, if we use the units from <span class="math inline">\(c\)</span> which is just the same units as sigma but one power higher, then our units for <span class="math inline">\(k\)</span> are also correct when we substitute and cancel.</p>
+<p>Lastly, referring to the other form of the equation with <span class="math inline">\(L_\inf\)</span> we need to figure out those units. The units for <span class="math inline">\(\sigma\)</span> come directly from the book and we just figured out what <span class="math inline">\(c\)</span>’s units. So when we multiply the two to get asymptotic length (<span class="math inline">\(L_inf\)</span>), most of the units cancel only leaving cm.</p>
+<p><span class="math display">\[
+\\[10pt]
+L_\inf = \frac{\sigma}{c}
+\\[10pt]
+\sigma = \frac{kg}{day*cm^2}
+\\[10pt]
+c = \frac{kg}{day*cm^3}
+\\[10pt]
+\frac{\sigma}{c} = cm
+\]</span>
+Now to find the unique solution for the equation that will require some integration.</p>
+<p>$$
+
+\[10pt]
+= k(L_{}-L)\[10pt]
+\[10pt]
+
+\[10pt]
+= k*dt
+\[10pt]
+
+\[10pt]
+=k
+\[10pt]
+
+\[10pt]</p>
+<p>$$
+Now remember that the derivative of the natural log of a number is one over that number. Since we want the integral we just need to go in reverse. If you notice the left side of the equation is one over a number. Our integral will be a natural log! And for the other side it’s just <span class="math inline">\(t\)</span> plus some constant.</p>
+<p><span class="math display">\[
+\text{integrate using natural log rule, notice the negative out front}
+\\[10pt]
+-ln(L_\infty-L(t))=kt+C
+\\[10pt]
+\text{for simplicity let&#39;s move the negative over}
+\\[10pt]
+ln(L_\infty-L(t))=-kt+C
+\\[10pt]
+\text{now we want to remove the ln by using an exponent which applies to both sides but not C}
+\\[10pt]
+exp(ln(L_\infty-L(t)))=C*exp(-kt)
+\\[10pt]
+\text{which after simplifying and isolating L(t), looks like this}
+\\[10pt]
+L(t)=L_\infty-C*exp(-kt)
+\\[10pt]
+\text{now that we have L(t) we can use the initial condition Marc provided, where L(0) = L0, t = 0, to figure out what C is}
+\\[10pt]
+L(t)=L_\infty-C*exp(-k*0) = L_0
+\\[10pt]
+C = L_\infty-L_0
+\text{Now we just plug C back into the equation to figure out L(t) with a real constant!}
+\\[10pt]
+L(t)=L_\infty-(L_\infty-L_0)*exp(-kt)
+\\[10pt]
+\text{distribute the new C value}
+\\[10pt]
+L(t)=L_\infty-L_\infty*exp(-kt)+L_0*exp(-kt)
+\\[10pt]
+\text{factor out Linf}
+\\[10pt]
+L(t)=L_\infty(1-exp(-kt)+L_0*exp(-kt)
+\]</span></p>
+</div>
+<div id="checking-our-work-3" class="section level3 hasAnchor" number="2.0.4">
+<h3><span class="header-section-number">2.0.4</span> Checking our work<a href="exercises.html#checking-our-work-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Since this is the equation told us to work to, no need to check work here.</p>
+</div>
+<div id="reflecting-on-the-biology-2" class="section level3 hasAnchor" number="2.0.5">
+<h3><span class="header-section-number">2.0.5</span> Reflecting on the biology<a href="exercises.html#reflecting-on-the-biology-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This growth equation is used extensively in fisheries and many other applications. If you were to obtain a reliable estimate of growth for an organism you can learn a lot about its life such as when does maturity likely occur or the maximum size you would expect to see in the wild.</p>
+<p>Here is what the growth curve looks plotted out if we assume <span class="math inline">\(L_0\)</span> is 0. The result shows a variety of fish that live up to 25 years old (assuming they make it that far before being eaten), with a variety of <span class="math inline">\(L_\infty\)</span> values. Now the tricky part after doing the math is catching the critters and asking how old they are when you measure them!</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="exercises.html#cb1-1" aria-hidden="true" tabindex="-1"></a>vbg <span class="ot">&lt;-</span> <span class="cf">function</span>(k,Linf,x) Linf<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(<span class="sc">-</span>k<span class="sc">*</span>x))</span>
+<span id="cb1-2"><a href="exercises.html#cb1-2" aria-hidden="true" tabindex="-1"></a>Linf <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">50</span>,<span class="dv">110</span>,<span class="dv">10</span>)</span>
+<span id="cb1-3"><a href="exercises.html#cb1-3" aria-hidden="true" tabindex="-1"></a>col<span class="ot">&lt;-</span><span class="fu">rainbow</span>(<span class="fu">length</span>(Linf))</span>
+<span id="cb1-4"><a href="exercises.html#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="exercises.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="fu">seq_along</span>(Linf)) {</span>
+<span id="cb1-6"><a href="exercises.html#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">curve</span>(<span class="fu">vbg</span>(.<span class="dv">15</span>, Linf[i], x), <span class="at">from=</span><span class="dv">0</span>, <span class="at">to=</span><span class="dv">25</span>, <span class="at">add=</span>i<span class="sc">!=</span><span class="dv">1</span>, <span class="at">col=</span>col[i], <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">130</span>), <span class="at">ylab =</span> <span class="st">&quot;Length (cm)&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Age (y)&quot;</span>, <span class="at">main=</span><span class="st">&quot;Multiple values of L_inf with a k=0.15&quot;</span>)</span>
+<span id="cb1-7"><a href="exercises.html#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-Chapter2.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

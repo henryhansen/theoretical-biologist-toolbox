@@ -26,7 +26,7 @@ Biologist’s Toolbox.</p>" />
 <meta name="author" content="Henry H. Hansen &amp; Daniel Greenberg" />
 
 
-<meta name="date" content="2022-05-23" />
+<meta name="date" content="2022-05-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -181,7 +181,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.0.4" data-path="exercises.html"><a href="exercises.html#checking-our-work-3"><i class="fa fa-check"></i><b>2.0.4</b> Checking our work<span></span></a></li>
 <li class="chapter" data-level="2.0.5" data-path="exercises.html"><a href="exercises.html#reflecting-on-the-biology-2"><i class="fa fa-check"></i><b>2.0.5</b> Reflecting on the biology<span></span></a></li>
 </ul></li>
-<li><a href="exercises.html#exercise-3-1">Exercise 3<span></span></a>
+<li><a href="exercises.html#exercise-3-4">Exercise 3 &amp; 4<span></span></a>
 <ul>
 <li class="chapter" data-level="2.0.6" data-path="exercises.html"><a href="exercises.html#the-biology-5"><i class="fa fa-check"></i><b>2.0.6</b> The biology<span></span></a></li>
 <li class="chapter" data-level="2.0.7" data-path="exercises.html"><a href="exercises.html#the-challenge-5"><i class="fa fa-check"></i><b>2.0.7</b> The challenge<span></span></a></li>
@@ -248,7 +248,7 @@ anabolic (using energy and mass to build, muscle building) and catabolic
 simply as the following.</p>
 <p><span class="math display">\[
 \\[10pt]
-\frac{dW}{dt} = \text{anabolic - catabolic}
+\frac{dW}{dt} = \textsf{anabolic - catabolic}
 \\[10pt]
 \]</span> We take things a step further and translate the anabolic and
 catabolic to quantifiable terms that link to an organism’s metabolism.
@@ -272,11 +272,11 @@ which for all practical matters is much easier to interpret.</p>
 \\[10pt]
 \frac{dW}{dt} = 3\rho L^2 \frac{dL}{dt} = \sigma L^2 -cL^3
 \\[10pt]
-\text{after simplifying we get}
+\textsf{after simplifying we get}
 \\[10pt]
 \frac{dL}{dt} = \frac{\sigma}{3\rho}-\frac{c}{3\rho}L
 \\[10pt]
-\text{after rearranging we get}
+\textsf{after rearranging we get}
 \\[10pt]
 \frac{dL}{dt} = \frac{c}{3\rho} \left(\frac{\sigma}{c}-L\right) = k(L_{\infty}-L)
 \]</span></p>
@@ -295,14 +295,16 @@ a unique solution for the ordinary differential equation given</strong>
 <div id="the-solution-4" class="section level3 hasAnchor" number="2.0.3">
 <h3><span class="header-section-number">2.0.3</span> The solution<a href="exercises.html#the-solution-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Here Marc suggested an alternative way to group the parameters and we
-need to check the units so they make sense. <span class="math display">\[
+need to check the units so they make sense.
+<span class="math display">\[
 \\[10pt]
 q = \frac{\sigma}{3\rho}
 \\[10pt]
 k = \frac{c}{3\rho}
 \\[10pt]
 \frac{dL}{dt} = q-kL
-\]</span> If the derivative is some unit length over time then we can assume
+\]</span>
+If the derivative is some unit length over time then we can assume
 something like centimeters per day. That would require the other two
 terms to have the same units. <span class="math inline">\(q\)</span> is by itself so centimeters per day is
 fine but <span class="math inline">\(k\)</span> is a little trickier. We know <span class="math inline">\(L\)</span> is centimeters but we
@@ -330,59 +332,61 @@ L_\inf = \frac{\sigma}{c}
 c = \frac{kg}{day*cm^3}
 \\[10pt]
 \frac{\sigma}{c} = cm
-\]</span> Now to find the unique solution for the equation that will require
+\]</span></p>
+<p>Now to find the unique solution for the equation that will require
 some integration.</p>
 <p><span class="math display">\[
-\text{we start with our equation}
+\textsf{we start with our equation}
 \\[10pt]
 \frac{dL}{dt} = k(L_{\infty}-L)\\[10pt]
 \\[10pt]
-\text{we then try to group all the L&#39;s together}
+\textsf{we then try to group all the L&#39;s together}
 \\[10pt]
 \frac{dL}{(L_{\infty}-L)} = k*dt
 \\[10pt]
-\text{now this is simpler to integrate}
+\textsf{now this is simpler to integrate}
 \\[10pt]
 \int{\frac{dL}{(L_{\infty}-L)}}=k\int{dt}
 \\[10pt]
-\text{notice we moved k out front and now we integrate}
+\textsf{notice we moved k out front and now we integrate}
 \\[10pt]
-\]</span> Now remember that the derivative of the natural log of a number is
+\]</span></p>
+<p>Now remember that the derivative of the natural log of a number is
 one over that number. Since we want the integral we just need to go in
 reverse. If you notice the left side of the equation is one over a
 number. Our integral will be a natural log! And for the other side it’s
 just <span class="math inline">\(t\)</span> plus some constant.</p>
 <p><span class="math display">\[
-\text{integrate using natural log rule, notice the negative out front}
+\textsf{integrate using natural log rule, notice the negative out front}
 \\[10pt]
 -ln(L_\infty-L(t))=kt+C
 \\[10pt]
-\text{for simplicity let&#39;s move the negative over}
+\textsf{for simplicity let&#39;s move the negative over}
 \\[10pt]
 ln(L_\infty-L(t))=-kt+C
 \\[10pt]
-\text{now we want to remove the ln by using an exponent which applies to both sides but not C}
+\textsf{now we want to remove the ln by using an exponent which applies to both sides but not C}
 \\[10pt]
 exp(ln(L_\infty-L(t)))=C*exp(-kt)
 \\[10pt]
-\text{which after simplifying and isolating L(t), looks like this}
+\textsf{which after simplifying and isolating L(t), looks like this}
 \\[10pt]
 L(t)=L_\infty-C*exp(-kt)
 \\[10pt]
-\text{now that we have L(t) we can use the initial condition Marc provided, where L(0) = L0, t = 0, to figure out what C is}
+\textsf{now that we have L(t) we can use the initial condition Marc provided, where L(0) = L0, t = 0, to figure out what C is}
 \\[10pt]
 L(t)=L_\infty-C*exp(-k*0) = L_0
 \\[10pt]
 C = L_\infty-L_0
-\text{Now we just plug C back into the equation to figure out L(t) with a real constant!}
+\textsf{Now we just plug C back into the equation to figure out L(t) with a real constant!}
 \\[10pt]
 L(t)=L_\infty-(L_\infty-L_0)*exp(-kt)
 \\[10pt]
-\text{distribute the new C value}
+\textsf{distribute the new C value}
 \\[10pt]
 L(t)=L_\infty-L_\infty*exp(-kt)+L_0*exp(-kt)
 \\[10pt]
-\text{factor out Linf}
+\textsf{factor out Linf}
 \\[10pt]
 L(t)=L_\infty(1-exp(-kt)+L_0*exp(-kt)
 \]</span></p>
@@ -413,10 +417,10 @@ the critters and asking how old they are when you measure them!</p>
 <p><img src="_main_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
 </div>
-<div id="exercise-3-1" class="section level2 unnumbered hasAnchor">
-<h2>Exercise 3<a href="exercises.html#exercise-3-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="exercise-3-4" class="section level2 unnumbered hasAnchor">
+<h2>Exercise 3 &amp; 4<a href="exercises.html#exercise-3-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <blockquote>
-<p><strong><em>Math Prerequisite:</em></strong> derivatives</p>
+<p><strong><em>Math Prerequisite:</em></strong> derivatives and algebra</p>
 </blockquote>
 <div id="the-biology-5" class="section level3 hasAnchor" number="2.0.6">
 <h3><span class="header-section-number">2.0.6</span> The biology<a href="exercises.html#the-biology-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -473,115 +477,164 @@ F(t) = e^{-mt} f (L_(1-e^{(-kt)}+L_0*exp(-kt))^b</p>
 <p>\[10pt]
 
 \[10pt]</p>
-<p>F(t) = e^{-mt} (L_(1-e<sup>{(-kt)}))</sup>b
-
-$$</p>
-<p>Since we want to figure out the change in
-<span class="math inline">\(F\)</span> given this function we take the derivative of this with respect to
-<span class="math inline">\(L\)</span>.</p>
-<p>$$</p>
 <p>F(t) = e^{-mt} (L_(1-e<sup>{(-kt)}))</sup>b</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>(e^{-m t}(l_-l_e^{-k t})^{b})</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>=(l_-e^{-k t} l_)<sup>{b}((e</sup>{-m t}))+e^{-m t}(((l_-e^{-k t} l_)^{b}))</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>=(l_-e^{-k t} l_)^{b} e^{-m t}((-m t)) + e^{-m t}(((l_-e^{-k t} l_)^{b}))</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>=(l_-e^{-k t} l_)^{b} e^{-m t}-m + e^{-m t}(((l_-e^{-k t} l_)^{b}))</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>=-e^{-m t} m(l_-e^{-k t} l_)^{b}+b e^{-m t}(l_-e^{-k t} l_)<sup>{b-1}((l_-e</sup>{-k t} l_))</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<span class="math display">\[\begin{aligned}
+<p>$$</p>
+<p>Since we want to figure out the change in
+<span class="math inline">\(F\)</span> given this function we take the derivative of this with respect to <span class="math inline">\(L\)</span>.</p>
+<p><span class="math display">\[
+F(t) = e^{-mt} \cdot 1 (L_\infty(1-e^{(-kt)}))^b
+\\[10pt]
+\textsf{distribute L infinity and take derivative}
+\\[10pt]
+\frac{d}{dt}\left(e^{-m t}\left(l_\infty-l_\infty e^{-k t}\right)^{b}\right)
+\\[10pt]
+\textsf{Use the product rule for the survival and reproductive output}
+\\[10pt]
+=\left(l_\infty-e^{-k t} l_\infty\right)^{b}\left(\frac{d}{d t}\left(e^{-m t}\right)\right)+e^{-m t}\left(\frac{d}{d t}\left(\left(l_\infty-e^{-k t} l_\infty\right)^{b}\right)\right)
+\\[10pt]
+\textsf{Using the chain rule for the first part of our product rule}
+\\[10pt]
+=\left(l_\infty-e^{-k t} l_\infty\right)^{b} e^{-m t}\left(\frac{d}{d t}(-m t)\right) + e^{-m t}\left(\frac{d}{d t}\left(\left(l_\infty-e^{-k t} l_\infty\right)^{b}\right)\right)
+\\[10pt]
+\textsf{Factor out constant, m, and derivative of t = 1}
+\\[10pt]
+=\left(l_\infty-e^{-k t} l_\infty\right)^{b} e^{-m t}\cdot-m + e^{-m t}\left(\frac{d}{d t}\left(\left(l_\infty-e^{-k t} l_\infty\right)^{b}\right)\right)
+\\[10pt]
+\textsf{Now let&#39;s finish the other half of our original product rule by using the chain rule again}
+\\[10pt]
+=-e^{-m t} m\left(l_\infty-e^{-k t} l_\infty\right)^{b}+b \cdot  e^{-m t}\left(l_\infty-e^{-k t} l_\infty\right)^{b-1}\left(\frac{d}{d t}\left(l_\infty-e^{-k t} l_\infty\right)\right)
+\\[10pt]
+\textsf{take the derivative of each inside term}
+\\[10pt]
+\begin{aligned}
 &amp;=-e^{-m t} m\left(l_\infty-e^{-k t} l_\infty\right)^{b}+ -l_\infty\left(\frac{d}{d t}\left(e^{-k t}\right)\right)+\frac{d}{d t}\left(l_\infty\right) \cdot b \cdot e^{-m t}\left(l_\infty-e^{-k t} l_\infty\right)^{b-1}
-\end{aligned}\]</span>
-<p>\[10pt]
-
-\[10pt]</p>
-<span class="math display">\[\begin{aligned}
+\end{aligned}
+\\[10pt]
+\textsf{ use the chain rule for the first derivative, factor out constant, k, and derivative of t = 1}
+\\[10pt]
+\begin{aligned}
 =&amp;-e^{-m t} m\left(l_\infty-e^{-k t} l_\infty\right)^{b}+ \left(  l_\infty \cdot k \cdot e^{-k t}  + \frac{d}{d t}(l_\infty)\right) \cdot b\cdot e^{-m t}\left(l_\infty-e^{-k t} l_\infty\right)^{b-1}
-\end{aligned}\]</span>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>=-e^{-m t} m(l_-e^{-k t} l_)^{b} + (l_k e^{-k t} +0) be^{-m t}(l_-e^{-k t} l_)^{b-1}</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>F’(t) = -e^{-m t} m(l_-e^{-k t} l_)^{b} + (l_k e^{-k t}) be^{-m t}(l_-e^{-k t} l_)^{b-1}</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>F’(t) =
-be^{-kt-mt} l_k(l_-e^{-k t} l_)^{b-1}
--e^{-m t} m(l_-e^{-k t} l_)^{b}</p>
-<p>$$
+\end{aligned}
+\\[10pt]
+\textsf{ The derivative of L infinity is zero }
+\\[10pt]
+=-e^{-m t} m\left(l_\infty-e^{-k t} l_\infty\right)^{b} + \left(l_\infty \cdot k \cdot e^{-k t} +0\right) \cdot b\cdot e^{-m t}\left(l_\infty-e^{-k t} l_\infty\right)^{b-1}
+\\[10pt]
+\textsf{ So the final equation is the following }
+\\[10pt]
+F&#39;(t) = -e^{-m t} m\left(l_\infty-e^{-k t} l_\infty\right)^{b} + \left(l_\infty \cdot k \cdot e^{-k t}\right) \cdot b\cdot e^{-m t}\left(l_\infty-e^{-k t} l_\infty\right)^{b-1}
+\\[10pt]
+\textsf{ which we can flip around and simplify to look nice}
+\\[10pt]
+F&#39;(t) =
+b\cdot e^{-kt-mt} \cdot l_\infty \cdot k\left(l_\infty-e^{-k t} l_\infty\right)^{b-1}
+-e^{-m t} m\left(l_\infty-e^{-k t} l_\infty\right)^{b}
+\]</span>
 That was a beast of a derivative. Let’s take a moment to recap what we did. We started with a function that describes fitness over time now we are looking at how fitness changes over time. To find the optimum length of maturity we still need to solve for <span class="math inline">\(t\)</span> after setting the equation equal to 0.</p>
-<p>$$</p>
-<p>0 = be^{-kt-mt} l_k(l_-e^{-k t} l_)^{b-1}
--e^{-m t} m(l_-e^{-k t} l_)^{b}</p>
-<p>\[10pt]
-
-\
-
-\[10pt]</p>
-<p>0 = -S(l_-e^{-k t} l_)^{b}</p>
-<p>\
-
-\[10pt]</p>
-<p>0 = - S</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>0 = - </p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>0 = - </p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p> = </p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>1 = - </p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p> = e^{kt} - 1</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>log( + 1) = kt</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>log( + 1) = t</p>
-<p>\[10pt]
-
-\[10pt]</p>
-<p>t = *log()</p>
-<p>$$</p>
+<p><span class="math display">\[
+0 = b\cdot e^{-kt-mt} \cdot l_\infty \cdot k\left(l_\infty-e^{-k t} l_\infty\right)^{b-1}
+-e^{-m t} m\left(l_\infty-e^{-k t} l_\infty\right)^{b}
+\\[10pt]
+\textsf{this is a little complex so lets rename all coefficeints}
+\\[10pt]
+\textsf{G in the first term and S in the second term and seperate the exponent}
+\\[10pt]
+0 = \frac{G \left(l_\infty-e^{-k t} l_\infty\right)^{b}}{\left(l_\infty-e^{-k t} l_\infty\right)}-S\left(l_\infty-e^{-k t} l_\infty\right)^{b}
+\\[10pt]
+\textsf{now we can divide out the parantheses with the b to get}
+\\[10pt]
+0 = \frac{G}{\left(l_\infty-e^{-k t} l_\infty\right)} - S
+\\[10pt]
+\textsf{we can also divide by G to get}
+\\[10pt]
+0 = \frac{1}{\left(l_\infty-e^{-k t} l_\infty\right)} - \frac{S}{G}
+\\[10pt]
+\textsf{now recall G and S are placeholders but now alot of these coefficients (L infinity) can cancel out and simplify}
+\\[10pt]
+0 = \frac{1}{\left(1-e^{-k t}\right)} - \frac{me^{kt}}{bk}
+\\[10pt]
+\textsf{we can now move the 2nd term over}
+\\[10pt]
+\frac{1}{\left(1-e^{-k t}\right)} = \frac{me^{kt}}{bk}
+\\[10pt]
+\textsf{we can multiply out the bottom parantheses and distribute it to the other term}
+\\[10pt]
+1 = \frac{me^{kt}}{bk} - \frac{m}{bk}
+\\[10pt]
+\textsf{great! now m, b, and k can move over}
+\\[10pt]
+\frac{bk}{m} = e^{kt} - 1
+\\[10pt]
+\textsf{add the one and take the log to remove the exponent}
+\\[10pt]
+log\left(\frac{bk}{m} + 1\right) = kt
+\\[10pt]
+\textsf{now just move the k over}
+\\[10pt]
+\frac{1}{k}log\left(\frac{bk}{m} + 1\right) = t
+\\[10pt]
+\textsf{and the inside just simplifies to m as denominator}
+\\[10pt]
+t = \frac{1}{k}*log\left(\frac{m + bk}{m}\right)
+\]</span></p>
 </div>
 <div id="checking-our-work-4" class="section level3 hasAnchor" number="2.0.9">
 <h3><span class="header-section-number">2.0.9</span> Checking our work<a href="exercises.html#checking-our-work-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>No need to check our work here! Our equation matches Marc’s!</p>
+<p>No need to check our work here! Our equation matches Marc’s! You can do exercise 2.4 now otherwise we show the answer below.</p>
 </div>
 <div id="reflecting-on-the-biology-3" class="section level3 hasAnchor" number="2.0.10">
 <h3><span class="header-section-number">2.0.10</span> Reflecting on the biology<a href="exercises.html#reflecting-on-the-biology-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This was a very enlightening exercise because we combined our intuitive understandings of growth and fitness to produce a realistic estimate of when maturity should be expected. Of course there are assumptions to this, such as our survival may be wildly different from the function we started with. But with a little calculus we figured out exactly where we should expect to see mature fish from an age perspective. Exercise 4 shows us what to do to see things from a length perspective. Just a little algebra!</p>
+<p><span class="math display">\[
+\\[10pt]
+\textsf{start with our growth equation}
+\\[10pt]
+L(t) = L_\infty(1 − exp(kt))
+\\[10pt]
+\textsf{and our maturity equation}
+\\[10pt]
+tm = \frac{1}{k}log(\frac{m + bk}{m})
+\\[10pt]
+\textsf{substitute our maturity equation into our growth equation}
+\\[10pt]
+L(tm) = L_\infty(1 − exp(k(\frac{1}{k}log(\frac{m + bk}{m}))))
+\\[10pt]
+\textsf{and simplify, k&#39;s cancel out}
+\\[10pt]
+= L_\infty(1 − exp(−log(\frac{m + bk}{m})))
+\\[10pt]
+\textsf{exp and log cancel out}
+\\[10pt]
+= L_\infty(1 − \frac{1}{\frac{m + bk}{m}})
+\\[10pt]
+\textsf{rearrange the fraction}
+\\[10pt]
+=L_\infty(\frac{m + bk − m}{m + bk})
+\\[10pt]
+\textsf{m&#39;s cancel out}
+\\[10pt]
+= L_\infty(\frac{bk}{m + bk})
+\\[10pt]
+\textsf{divide out the k&#39;s}
+\\[10pt]
+= L_\infty(\frac{b}
+{b + \frac{m}{k}})
+\]</span></p>
+<p>We can then plot this relationship to show some hypothetical growth curves and their expected maturity given some assumptions about mortality!</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="exercises.html#cb3-1" aria-hidden="true" tabindex="-1"></a>vbg <span class="ot">&lt;-</span> <span class="cf">function</span>(k,Linf,x) Linf<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(<span class="sc">-</span>k<span class="sc">*</span>x))</span>
+<span id="cb3-2"><a href="exercises.html#cb3-2" aria-hidden="true" tabindex="-1"></a>tmg <span class="ot">&lt;-</span> <span class="cf">function</span>(b,m,k) <span class="dv">1</span><span class="sc">/</span>k <span class="sc">*</span> <span class="fu">log</span>((m <span class="sc">+</span> b<span class="sc">*</span>k)<span class="sc">/</span>m)</span>
+<span id="cb3-3"><a href="exercises.html#cb3-3" aria-hidden="true" tabindex="-1"></a>lmg <span class="ot">&lt;-</span> <span class="cf">function</span>(Linf,b,m,k) Linf<span class="sc">*</span>(b<span class="sc">/</span>(b<span class="sc">+</span>(m<span class="sc">/</span>k)))</span>
+<span id="cb3-4"><a href="exercises.html#cb3-4" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb3-5"><a href="exercises.html#cb3-5" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fl">0.25</span></span>
+<span id="cb3-6"><a href="exercises.html#cb3-6" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> <span class="fl">0.15</span></span>
+<span id="cb3-7"><a href="exercises.html#cb3-7" aria-hidden="true" tabindex="-1"></a>Linf <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">50</span>,<span class="dv">110</span>,<span class="dv">10</span>)</span>
+<span id="cb3-8"><a href="exercises.html#cb3-8" aria-hidden="true" tabindex="-1"></a>col<span class="ot">&lt;-</span><span class="fu">rainbow</span>(<span class="fu">length</span>(Linf))</span>
+<span id="cb3-9"><a href="exercises.html#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="exercises.html#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="fu">seq_along</span>(Linf)) {</span>
+<span id="cb3-11"><a href="exercises.html#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">curve</span>(<span class="fu">vbg</span>(.<span class="dv">15</span>, Linf[i], x), <span class="at">from=</span><span class="dv">0</span>, <span class="at">to=</span><span class="dv">25</span>, <span class="at">add=</span>i<span class="sc">!=</span><span class="dv">1</span>, <span class="at">col=</span>col[i], <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">130</span>), <span class="at">ylab =</span> <span class="st">&quot;Length (cm)&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Age (y)&quot;</span>, <span class="at">main=</span><span class="st">&quot;Multiple values of L_inf with a k=0.15 </span><span class="sc">\n</span><span class="st"> and mortality of 0.25 for maturity&quot;</span>)</span>
+<span id="cb3-12"><a href="exercises.html#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">points</span>(<span class="fu">tmg</span>(b,m,k),<span class="fu">lmg</span>(Linf[i],b,m,k))</span>
+<span id="cb3-13"><a href="exercises.html#cb3-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 
 </div>
 </div>
